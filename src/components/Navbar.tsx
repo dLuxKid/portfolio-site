@@ -15,13 +15,8 @@ export default function Navbar() {
           <li className="nav_link">
             <Link href="/projects">Project</Link>
           </li>
-          <li className="ml-2 px-3 py-1 rounded-2xl blue_gradient">
-            <a
-              title="download"
-              href="../app/favicon.ico"
-              download
-              className="nav_link"
-            >
+          <li className="ml-2 px-4 py-2 rounded-3xl blue_gradient nav_link">
+            <a title="download" href="../app/favicon.ico" download>
               Download CV
             </a>
           </li>

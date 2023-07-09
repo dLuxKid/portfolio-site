@@ -2,9 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-/* .app {
-  @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
-} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+
+.section {
+  @apply px-[5%] py-[2.5%];
+}
 
 .black_btn {
   @apply rounded-full border border-black bg-black py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black text-center text-sm flex items-center justify-center;
@@ -15,19 +22,19 @@
 }
 
 .head_text {
-  @apply mt-5 text-2xl font-extrabold leading-[1.15] md:text-4xl;
+  @apply mt-5 text-xl sm:text-2xl font-extrabold leading-[1.15] md:text-3xl lg:text-4xl text-white-pry;
 }
 
 .title_text {
-  @apply text-xl font-bold leading-[1.15] sm:text-2xl xl:text-3xl;
+  @apply text-lg font-bold leading-[1.15] sm:text-xl md:text-2xl xl:text-3xl text-white-pry;
 }
 
-.orange_gradient {
-  @apply bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent;
+.body_text {
+  @apply text-sm sm:text-base md:text-xl font-medium text-white-sec;
 }
 
-.green_gradient {
-  @apply bg-gradient-to-r from-green-400 to-green-500 bg-clip-text text-transparent;
+.tiny_text {
+  @apply text-xs sm:text-sm md:text-xl font-medium text-white-sec;
 }
 
 .blue_gradient {
@@ -88,4 +95,10 @@
 
 .flex-between {
   @apply flex justify-between items-center;
+}
+
+@media (max-width: 780px) {
+  .section {
+    @apply p-[5%];
+  }
 }

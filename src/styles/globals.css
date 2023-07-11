@@ -13,8 +13,8 @@
   @apply px-[5%] py-[2.5%];
 }
 
-.black_btn {
-  @apply rounded-full border border-black bg-black py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black text-center text-sm flex items-center justify-center;
+.pry_btn {
+  @apply rounded-full border bg-gradient-to-r from-[#bfbfbf] to-[#fc814a] py-2 px-5 text-white-pry transition-all duration-300 font-semibold text-center text-sm sm:text-base md:text-lg flex items-center justify-center;
 }
 
 .outline_btn {
@@ -39,6 +39,9 @@
 
 .blue_gradient {
   @apply bg-gradient-to-r from-[#bfbfbf] to-[#fc814a];
+}
+.blue_gradient_text {
+  @apply bg-gradient-to-r from-[#bfbfbf] via-[#bfbfbf] to-[#fc814a] text-transparent bg-clip-text;
 }
 
 .desc {

@@ -30,8 +30,18 @@ export default function Contact() {
     console.log(state);
   };
 
+  // styles
+  const inputForm = "flex flex-col gap-2 sm:gap-3 items-stretch justify-center";
+  const label = "font-semibold text-base md:text-xl text-white-sec";
+  const input =
+    "w-full p-4 bg-black-sec rounded-md placeholder:text-base placeholder:font-semibold";
+  const textarea = "w-full h-24 md:h-40 p-4 bg-black-sec rounded-md font-sm";
+
   return (
-    <div className="flex-between flex-col md:flex-row w-full" id="get-in-touch">
+    <div
+      className="flex justify-between mb-8 items-start flex-col md:flex-row w-full"
+      id="get-in-touch"
+    >
       <div className="w-full md:w-[45%] flex flex-col items-center md:items-baseline gap-4 md:gap-8">
         <h2 className="title_text uppercase blue_gradient_text">
           Get in touch with me
@@ -103,33 +113,38 @@ export default function Contact() {
           className="flex items-stretch justify-center gap-4 md:gap-6 flex-col"
           onSubmit={handleSubmit}
         >
-          <label>
-            <span>Your Name</span>
+          <label className={inputForm}>
+            <span className={label}>Your Name</span>
             <input
               type="text"
               title="name"
               name="name"
+              placeholder="Enter your name"
               value={state.name}
               onChange={handleChange}
+              className={input}
             />
           </label>
-          <label>
-            <span>Your Email</span>
+          <label className={inputForm}>
+            <span className={label}>Your Email</span>
             <input
               type="email"
               title="email"
               name="email"
+              placeholder="Enter your email"
               value={state.email}
               onChange={handleChange}
+              className={input}
             />
           </label>
-          <label>
-            <span>What are you looking for</span>
+          <label className={inputForm}>
+            <span className={label}>What are you looking for</span>
             <textarea
               name="message"
               title="message"
               value={state.messsage}
               onChange={handleChange}
+              className={textarea}
             />
           </label>
           <div>

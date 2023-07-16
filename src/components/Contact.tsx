@@ -5,7 +5,7 @@ import React, { useReducer } from "react";
 const initialState = {
   name: "",
   email: "",
-  messsage: "",
+  message: "",
 };
 
 type initialStateType = typeof initialState;
@@ -34,12 +34,13 @@ export default function Contact() {
   const inputForm = "flex flex-col gap-2 sm:gap-3 items-stretch justify-center";
   const label = "font-semibold text-base md:text-xl text-white-sec";
   const input =
-    "w-full p-4 bg-black-sec rounded-md placeholder:text-base placeholder:font-semibold";
-  const textarea = "w-full h-24 md:h-40 p-4 bg-black-sec rounded-md font-sm";
+    "w-full p-4 bg-black-sec rounded-md placeholder:text-base placeholder:font-semibold text-white-sec";
+  const textarea =
+    "w-full h-40 p-4 bg-black-sec rounded-md font-sm text-white-sec";
 
   return (
     <div
-      className="flex justify-between mb-8 items-start flex-col md:flex-row w-full"
+      className="flex justify-between mb-8 items-start flex-col md:flex-row w-full section border-t-4 border-black-sec"
       id="get-in-touch"
     >
       <div className="w-full md:w-[45%] flex flex-col items-center md:items-baseline gap-4 md:gap-8">
@@ -53,7 +54,7 @@ export default function Contact() {
         <ul className="flex-center gap-4">
           <li>
             <a
-              href=""
+              href="mailto:adetunjimarvellous09@gmail.com"
               target="_blank"
               className="cursor-pointer text-white-sec"
             >
@@ -67,7 +68,8 @@ export default function Contact() {
           </li>
           <li>
             <a
-              href=""
+              href="https://wa.me/+2349052513271"
+              rel="noopener"
               target="_blank"
               className="cursor-pointer text-white-sec"
             >
@@ -81,7 +83,8 @@ export default function Contact() {
           </li>
           <li>
             <a
-              href=""
+              href="https://twitter.com/JustMarvellous_"
+              rel="noopener"
               target="_blank"
               className="cursor-pointer text-white-sec"
             >
@@ -90,7 +93,8 @@ export default function Contact() {
           </li>
           <li>
             <a
-              href=""
+              href="https://www.linkedin.com/in/marvellousadetunji/"
+              rel="noopener"
               target="_blank"
               className="cursor-pointer text-white-sec"
             >
@@ -99,7 +103,8 @@ export default function Contact() {
           </li>
           <li>
             <a
-              href=""
+              href="https://github.com/dLuxKid"
+              rel="noopener"
               target="_blank"
               className="cursor-pointer text-white-sec"
             >
@@ -142,7 +147,7 @@ export default function Contact() {
             <textarea
               name="message"
               title="message"
-              value={state.messsage}
+              value={state.message}
               onChange={handleChange}
               className={textarea}
             />

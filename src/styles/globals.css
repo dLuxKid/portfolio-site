@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scrollbar-width: none;
   /* outline: 1px solid red; */
 }
 
@@ -46,7 +47,7 @@ textarea:focus {
 }
 
 .tiny_text {
-  @apply text-xs sm:text-sm md:text-xl font-medium text-white-sec;
+  @apply text-xs sm:text-sm md:text-xl md:font-medium text-white-sec;
 }
 
 .blue_gradient {

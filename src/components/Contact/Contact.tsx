@@ -1,4 +1,5 @@
 "use client";
+
 import { Icon } from "@iconify/react";
 import React, { useReducer } from "react";
 
@@ -30,17 +31,9 @@ export default function Contact() {
     console.log(state);
   };
 
-  // styles
-  const inputForm = "flex flex-col gap-2 sm:gap-3 items-stretch justify-center";
-  const label = "font-semibold text-base md:text-xl text-white-sec";
-  const input =
-    "w-full p-4 bg-black-sec rounded-md placeholder:text-base placeholder:font-semibold text-white-sec";
-  const textarea =
-    "w-full h-40 p-4 bg-black-sec rounded-md font-sm text-white-sec";
-
   return (
-    <div
-      className="flex justify-between mb-8 items-start flex-col md:flex-row w-full section border-t-4 border-black-sec"
+    <section
+      className="flex justify-between mb-8 items-start flex-col gap-4 md:flex-row w-full section border-t-4 border-black-sec"
       id="get-in-touch"
     >
       <div className="w-full md:w-[45%] flex flex-col items-center md:items-baseline gap-4 md:gap-8">
@@ -118,8 +111,8 @@ export default function Contact() {
           className="flex items-stretch justify-center gap-4 md:gap-6 flex-col"
           onSubmit={handleSubmit}
         >
-          <label className={inputForm}>
-            <span className={label}>Your Name</span>
+          <label className="input_form">
+            <span className="form_label">Your Name</span>
             <input
               type="text"
               title="name"
@@ -127,11 +120,11 @@ export default function Contact() {
               placeholder="Enter your name"
               value={state.name}
               onChange={handleChange}
-              className={input}
+              className="form_input"
             />
           </label>
-          <label className={inputForm}>
-            <span className={label}>Your Email</span>
+          <label className="input_form">
+            <span className="form_label">Your Email</span>
             <input
               type="email"
               title="email"
@@ -139,17 +132,17 @@ export default function Contact() {
               placeholder="Enter your email"
               value={state.email}
               onChange={handleChange}
-              className={input}
+              className="form_input"
             />
           </label>
-          <label className={inputForm}>
-            <span className={label}>What are you looking for</span>
+          <label className="input_form">
+            <span className="form_label">What are you looking for</span>
             <textarea
               name="message"
               title="message"
               value={state.message}
               onChange={handleChange}
-              className={textarea}
+              className="form_textarea"
             />
           </label>
           <div>
@@ -159,6 +152,6 @@ export default function Contact() {
           </div>
         </form>
       </div>
-    </div>
+    </section>
   );
 }

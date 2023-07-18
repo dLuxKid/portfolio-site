@@ -27,19 +27,23 @@ textarea:focus {
 }
 
 .pry_btn {
-  @apply rounded-full border bg-gradient-to-r from-[#bfbfbf] to-[#fc814a] py-2 px-5 text-white-pry transition-all duration-300 hover:opacity-80 font-semibold text-center text-sm sm:text-base md:text-lg flex items-center justify-center;
+  @apply rounded-full border  bg-gradient-to-r from-[#bfbfbf] to-[#fc814a] py-2 px-5 text-white-pry transition-all duration-300 hover:opacity-90 font-semibold text-center text-sm sm:text-base md:text-lg flex items-center justify-center;
+}
+
+.white_btn {
+  @apply rounded-full border py-2 px-5 border-white-pry bg-black-pry text-white-sec hover:bg-white-pry hover:text-black-sec transition-all duration-300 font-semibold text-center text-sm sm:text-base md:text-lg flex items-center justify-center;
 }
 
 .outline_btn {
-  @apply rounded-full border border-black bg-transparent py-1.5 px-5 text-black transition-all hover:bg-black hover:text-white text-center text-sm flex items-center justify-center;
+  @apply rounded-full border py-2 px-5 text-black-pry bg-white-pry transition-all hover:border-white-pry hover:bg-black-pry hover:text-white text-center text-sm sm:text-base md:text-lg flex items-center justify-center;
 }
 
 .head_text {
-  @apply mt-5 text-xl sm:text-2xl font-extrabold leading-[1.15] md:text-3xl lg:text-4xl text-white-pry;
+  @apply mt-5 text-xl sm:text-2xl font-extrabold md:text-3xl lg:text-4xl text-white-pry;
 }
 
 .title_text {
-  @apply text-lg font-bold leading-[1.15] sm:text-xl md:text-2xl xl:text-3xl text-white-pry;
+  @apply text-lg font-bold sm:text-xl md:text-2xl xl:text-3xl text-white-pry;
 }
 
 .body_text {
@@ -47,16 +51,21 @@ textarea:focus {
 }
 
 .tiny_text {
-  @apply text-xs sm:text-sm md:text-xl md:font-medium text-white-sec;
+  @apply text-xs sm:text-sm md:text-lg font-medium text-white-sec;
+}
+
+.nav_link {
+  @apply text-base md:text-lg text-white-sec hover:text-white hover:opacity-90 font-semibold;
 }
 
 .blue_gradient {
   @apply bg-gradient-to-r from-[#bfbfbf] to-[#fc814a];
 }
-.blue_gradient_text {
-  @apply bg-gradient-to-r from-[#bfbfbf] via-[#bfbfbf] to-[#fc814a] text-transparent bg-clip-text;
-}
 
+.blue_gradient_text {
+  @apply bg-gradient-to-r from-[#bfbfbf] to-[#fc814a] text-transparent bg-clip-text;
+}
+/* 
 .desc {
   @apply mt-5 text-lg text-gray-600 sm:text-xl max-w-2xl;
 }
@@ -71,14 +80,22 @@ textarea:focus {
 
 .prompt_layout {
   @apply space-y-6 py-8 sm:columns-2 sm:gap-6 xl:columns-3;
+} */
+
+.input_form {
+  @apply flex flex-col gap-2 sm:gap-3 items-stretch justify-center;
+}
+
+.form_label {
+  @apply font-semibold text-base md:text-xl text-white-sec;
 }
 
 .form_textarea {
-  @apply w-full flex rounded-lg h-[200px] mt-2 p-3 text-sm text-gray-500 outline-0;
+  @apply w-full h-40 p-4 bg-black-sec rounded-md text-white-sec;
 }
 
 .form_input {
-  @apply w-full flex rounded-lg mt-2 p-3 text-sm text-gray-500 outline-0;
+  @apply w-full p-4 bg-black-sec rounded-md placeholder:text-base placeholder:font-semibold text-white-sec;
 }
 
 .logo_text {
@@ -87,10 +104,6 @@ textarea:focus {
 
 .dropdown {
   @apply absolute right-0 top-full mt-3 w-full p-5 rounded-lg bg-white min-w-[210px] flex flex-col gap-2 justify-end items-end;
-}
-
-.nav_link {
-  @apply text-base md:text-lg text-white-sec hover:text-white font-semibold;
 }
 
 .prompt_card {

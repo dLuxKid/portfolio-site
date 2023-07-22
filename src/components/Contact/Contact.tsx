@@ -37,7 +37,7 @@ export default function Contact() {
       id="get-in-touch"
     >
       <div className="w-full md:w-[45%] flex flex-col items-center md:items-baseline gap-4 md:gap-8">
-        <h2 className="title_text uppercase blue_gradient_text">
+        <h2 className="head_text uppercase blue_gradient_text">
           Get in touch with me
         </h2>
         <p className="body_text">

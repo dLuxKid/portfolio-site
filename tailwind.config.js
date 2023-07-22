@@ -7,9 +7,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      animation: {
-        "bounce-slow": "bounce 2s ease-in-out infinite",
-      },
       colors: {
         "black-pry": "#161513",
         "black-sec": "#1C1C22",

@@ -6,7 +6,7 @@ export default function Herosection() {
     <section className="section md:min-h-[80vh] border-t-4 border-black-sec">
       <div className=" flex justify-between items-center flex-col mt-8">
         <Avatar />
-        <div className="w-full sm:w-[80% md:w-[60%] text-center mt-10 flex flex-col gap-2">
+        <div className="w-full sm:w-[80%] md:w-[60%] text-center mt-10 flex flex-col gap-2">
           <h2 className="head_text tracking-wide">
             <span className="blue_gradient_text">
               Hello, I'm Adetunji Marvellous

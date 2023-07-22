@@ -1,12 +1,14 @@
 "use client";
 
-import Link from "next/link";
-import React, { useEffect, useRef, useState } from "react";
-import styles from "@/styles/navbar.module.css";
 import { Icon } from "@iconify/react";
+import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
 
 export default function Navbar() {
-  const navRef = useRef<HTMLDivElement>(null);
+  const navRef = useRef<HTMLElement | boolean>(false);
+
+  const nav =
+    "sticky top-0 left-0 bg-transparent backdrop-blur-[2px] shadow-md z-50";
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [screenSize, setScreenSize] = useState<number>(window.innerWidth);
@@ -18,9 +20,9 @@ export default function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 80) {
-        navRef.current?.classList.add(styles.nav);
+        navRef.current = true;
       } else {
-        navRef.current?.classList.remove(styles.nav);
+        navRef.current = false;
       }
     };
 
@@ -40,7 +42,10 @@ export default function Navbar() {
   }, [screenSize]);
 
   return (
-    <nav className="w-full px-[5%] py-4" ref={navRef}>
+    <nav
+      className={`w-full px-[5%] py-4 ${navRef.current && nav}`}
+      ref={navRef}
+    >
       <div className="flex-between w-full relative">
         <p className="logo_text" onClick={() => setIsMobileMenuOpen(false)}>
           <Link href={"/"}>Marvellous</Link>

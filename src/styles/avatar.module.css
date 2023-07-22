@@ -23,7 +23,7 @@
   position: absolute;
   left: -21%;
   top: -21%;
-  background: url("../assets/Marvellous.JPG");
+  background: url("../assets/imgs/Marvellous.JPG");
   background-size: 100%;
   background-position: center center;
   animation: spin 12s ease-in-out infinite alternate-reverse;

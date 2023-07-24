@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
 export default function Navbar() {
-  const navRef = useRef<HTMLElement | boolean>(false);
+  const navRef = useRef<HTMLElement>(null);
 
   const nav =
     "sticky top-0 left-0 bg-transparent backdrop-blur-[2px] shadow-md z-50";
@@ -20,9 +20,9 @@ export default function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 80) {
-        navRef.current = true;
+        navRef.current?.classList.add(nav);
       } else {
-        navRef.current = false;
+        navRef.current?.classList.remove(nav);
       }
     };
 
@@ -42,10 +42,7 @@ export default function Navbar() {
   }, [screenSize]);
 
   return (
-    <nav
-      className={`w-full px-[5%] py-4 ${navRef.current && nav}`}
-      ref={navRef}
-    >
+    <nav className="w-full px-[5%] py-4" ref={navRef}>
       <div className="flex-between w-full relative">
         <p className="logo_text" onClick={() => setIsMobileMenuOpen(false)}>
           <Link href={"/"}>Marvellous</Link>
@@ -55,7 +52,7 @@ export default function Navbar() {
         {screenSize > 768 && (
           <ul className="flex-between gap-4">
             <li className="nav_link">
-              <Link href="#project">Project</Link>
+              <Link href="#project">Projects</Link>
             </li>
             <li className="nav_link">
               <Link href="#contact">Contact Me</Link>
@@ -101,7 +98,7 @@ export default function Navbar() {
             onClick={toggleMobileMenu}
           >
             <li className="nav_link w-full">
-              <Link href="#project">Project</Link>
+              <Link href="#project">Projects</Link>
             </li>
             <li className="nav_link w-full">
               <Link href="#contact">Contact Me</Link>

@@ -1,12 +1,13 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Github from "../SVG/Github";
 import Web from "../SVG/Web";
 
 interface Props {
-  photoUrl: string;
+  photoUrl: StaticImageData;
   name: string;
   githubLink: string;
   webLink: string;
+  desc: string;
 }
 
 export default function ProjectCard({
@@ -14,18 +15,20 @@ export default function ProjectCard({
   name,
   githubLink,
   webLink,
+  desc,
 }: Props) {
   return (
-    <div className="relative w-full sm:w-[48%] md:w-[31%] h-[300px] bg-black-sec overflow-hidden [&>*:nth-child(2)]:hover:top-0 [&>*:nth-child(2)]:hover:left-0 [&>*:nth-child(1)]:hover:top-0 [&>*:nth-child(1)]:hover:-left-full flex-center">
-      <div className="w-full h-full absolute transition-all duration-500 top-0 left-0">
+    <div className="relative w-full md:w-[48%] h-80 bg-black-sec overflow-hidden [&>*:nth-child(2)]:hover:top-0 [&>*:nth-child(2)]:hover:left-0 [&>*:nth-child(1)]:hover:top-0 [&>*:nth-child(1)]:hover:-left-full flex-center">
+      <div className="w-full h-full absolute transition-all duration-500 top-0 left-0 z-10">
         <Image
           src={photoUrl}
           alt="project thumbnail"
-          className="w-full object-fill object-center"
+          className="w-full h-full object-fill object-center"
         />
       </div>
       <div className="w-full h-full absolute transition-all duration-500 top-0 left-full py-8 px-4  border-white-pry border text-center flex-center flex-col gap-4">
-        <h2 className="body_text">{name} hi</h2>
+        <h2 className="body_text">{name}</h2>
+        <p className="tiny_text -mt-4">{desc}</p>
         <span className="w-full h-[2px] bg-white-sec rounded-sm"></span>
         <p className="flex-center gap-6">
           <a
@@ -33,19 +36,21 @@ export default function ProjectCard({
             title="github link"
             target="_blank"
             rel="noopener"
-            className="hover:opacity-80 transition-all duration-200"
+            className="hover:opacity-80 transition-all duration-200 cursor-pointer"
           >
             <Github />
           </a>
-          <a
-            href={webLink}
-            title="website link"
-            target="_blank"
-            rel="noopener"
-            className="hover:opacity-80 transition-all duration-200"
-          >
-            <Web />
-          </a>
+          {webLink && (
+            <a
+              href={webLink}
+              title="website link"
+              target="_blank"
+              rel="noopener"
+              className="hover:opacity-80 transition-all duration-200 cursor-pointer"
+            >
+              <Web />
+            </a>
+          )}
         </p>
       </div>
     </div>

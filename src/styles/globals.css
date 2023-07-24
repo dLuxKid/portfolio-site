@@ -40,11 +40,11 @@ textarea:focus {
 }
 
 .outline_btn {
-  @apply rounded-full border py-2 px-5 text-black-pry bg-white-pry transition-all hover:border-white-pry hover:bg-black-pry hover:text-white text-center text-sm sm:text-base md:text-lg flex items-center justify-center;
+  @apply rounded-full border py-2 px-5 text-black-pry bg-white-pry transition-all hover:border-white-pry hover:bg-black-pry hover:text-white text-center duration-300 font-semibold text-sm sm:text-base md:text-lg flex items-center justify-center;
 }
 
 .head_text {
-  @apply mt-5 text-xl sm:text-2xl font-bold md:text-3xl lg:text-4xl text-white-pry;
+  @apply text-xl sm:text-2xl font-bold md:text-3xl lg:text-4xl text-white-pry;
 }
 
 .title_text {
@@ -52,11 +52,11 @@ textarea:focus {
 }
 
 .body_text {
-  @apply text-sm sm:text-base md:text-xl font-medium text-white-sec;
+  @apply text-base md:text-xl font-medium text-white-sec;
 }
 
 .tiny_text {
-  @apply text-xs sm:text-sm md:text-lg font-medium text-white-sec;
+  @apply text-xs sm:text-sm md:text-base font-medium text-white-sec;
 }
 
 .nav_link {

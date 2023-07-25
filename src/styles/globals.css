@@ -60,7 +60,7 @@ textarea:focus {
 }
 
 .nav_link {
-  @apply text-base md:text-lg text-white-sec hover:text-white hover:opacity-90 font-semibold;
+  @apply text-base md:text-lg text-white-sec hover:text-white hover:opacity-90 duration-200 font-semibold;
 }
 
 .blue_gradient {
@@ -70,22 +70,6 @@ textarea:focus {
 .blue_gradient_text {
   @apply bg-gradient-to-r from-[#bfbfbf] to-[#fc814a] text-transparent bg-clip-text;
 }
-/* 
-.desc {
-  @apply mt-5 text-lg text-gray-600 sm:text-xl max-w-2xl;
-}
-
-.search_input {
-  @apply block w-full rounded-md border border-gray-200 bg-white py-2.5 pl-5 pr-12 text-sm shadow-lg font-medium focus:border-black focus:outline-none focus:ring-0;
-}
-
-.glassmorphism {
-  @apply rounded-xl border border-gray-200 bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-5;
-}
-
-.prompt_layout {
-  @apply space-y-6 py-8 sm:columns-2 sm:gap-6 xl:columns-3;
-} */
 
 .input_form {
   @apply flex flex-col gap-2 sm:gap-3 items-stretch justify-center;

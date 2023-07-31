@@ -36,7 +36,7 @@ export default function Contact() {
       className="flex justify-between mb-8 items-start flex-col gap-4 md:flex-row w-full section border-t-4 border-black-sec"
       id="get-in-touch"
     >
-      <div className="w-full md:w-[45%] flex flex-col items-center md:items-baseline gap-4 md:gap-8">
+      <div className="w-full md:w-[45%] flex flex-col items-center md:items-baseline gap-4 md:gap-6">
         <h2 className="head_text uppercase blue_gradient_text">
           Get in touch with me
         </h2>
@@ -44,12 +44,12 @@ export default function Contact() {
           Have something in mind? Looking to partner or work together? Fill in
           the form and ill be sure to reach out
         </p>
-        <ul className="flex-center gap-4">
+        <ul className="flex-start flex-col gap-1 md:gap-2">
           <li>
             <a
               href="mailto:adetunjimarvellous09@gmail.com"
               target="_blank"
-              className="cursor-pointer text-white-sec"
+              className="cursor-pointer text-white-sec flex-center gap-2"
             >
               <Icon
                 icon="clarity:email-solid"
@@ -57,6 +57,9 @@ export default function Contact() {
                 height={32}
                 width={32}
               />
+              <span className="tiny_text hover:underline">
+                adetunjimarvellous09@gmail.com
+              </span>
             </a>
           </li>
           <li>
@@ -64,7 +67,7 @@ export default function Contact() {
               href="https://wa.me/+2349052513271"
               rel="noopener"
               target="_blank"
-              className="cursor-pointer text-white-sec"
+              className="cursor-pointer text-white-sec flex-center gap-2"
             >
               <Icon
                 icon="ic:baseline-whatsapp"
@@ -72,10 +75,15 @@ export default function Contact() {
                 height={32}
                 width={32}
               />
+              <span className="tiny_text hover:underline">+234 9052513271</span>
             </a>
           </li>
+        </ul>
+        <p className="flex text-center title_text -mt-2 -mb-4">MY SOCIALS</p>
+        <ul className="flex-center gap-4">
           <li>
             <a
+              title="twitter"
               href="https://twitter.com/JustMarvellous_"
               rel="noopener"
               target="_blank"
@@ -86,6 +94,7 @@ export default function Contact() {
           </li>
           <li>
             <a
+              title="linnkedin"
               href="https://www.linkedin.com/in/marvellousadetunji/"
               rel="noopener"
               target="_blank"
@@ -96,6 +105,7 @@ export default function Contact() {
           </li>
           <li>
             <a
+              title="github"
               href="https://github.com/dLuxKid"
               rel="noopener"
               target="_blank"

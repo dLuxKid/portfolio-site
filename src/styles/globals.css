@@ -7,7 +7,7 @@
   padding: 0;
   box-sizing: border-box;
   scrollbar-width: 0;
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 
 *::-webkit-scrollbar {
@@ -48,7 +48,7 @@ textarea:focus {
 }
 
 .title_text {
-  @apply text-lg font-semibold md:font-bold sm:text-xl md:text-2xl xl:text-3xl text-white-pry;
+  @apply text-lg font-semibold md:font-semibold sm:text-xl md:text-2xl text-white-pry;
 }
 
 .body_text {

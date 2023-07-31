@@ -60,7 +60,7 @@ export default function Navbar() {
             <li className="nav_link">
               <Link href="#contact">Contact Me</Link>
             </li>
-            <li className="ml-2 px-4 py-2 rounded-3xl blue_gradient nav_link">
+            <li className="ml-2 px-4 py-2 rounded-3xl blue_gradient nav_link cursor-pointer">
               <a title="download" href="../app/favicon.ico" download>
                 Download CV
               </a>
@@ -107,7 +107,7 @@ export default function Navbar() {
               <Link href="#contact">Contact Me</Link>
             </li>
             <li className="w-full flex justify-center">
-              <div className="ml-2 px-4 py-2 rounded-3xl blue_gradient nav_link">
+              <div className="ml-2 px-4 py-2 rounded-3xl blue_gradient nav_link cursor-pointer">
                 <a title="download" href="../app/favicon.ico" download>
                   Download CV
                 </a>

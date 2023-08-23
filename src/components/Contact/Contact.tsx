@@ -1,48 +1,20 @@
 "use client";
 
 import { Icon } from "@iconify/react";
-import React, { useReducer } from "react";
-
-const initialState = {
-  name: "",
-  email: "",
-  message: "",
-};
-
-type initialStateType = typeof initialState;
-
-type reducerAction = { input: string; value: string };
-
-const formReducer = (state: initialStateType, action: reducerAction) => {
-  return { ...state, [action.input]: action.value };
-};
 
 export default function Contact() {
-  const [state, dispatch] = useReducer(formReducer, initialState);
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    dispatch({ input: e.target.name, value: e.target.value });
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log(state);
-  };
 
   return (
     <section
-      className="flex justify-between mb-8 items-start flex-col gap-4 md:flex-row w-full section border-t-4 border-black-sec"
+      className="w-full section border-t-4 border-black-sec"
       id="get-in-touch"
     >
-      <div className="w-full md:w-[45%] flex flex-col items-center md:items-baseline gap-4 md:gap-6">
+      <div className="w-full flex-center flex-col gap-4 md:gap-6 my-6">
         <h2 className="head_text uppercase blue_gradient_text">
           Get in touch with me
         </h2>
         <p className="body_text">
-          Have something in mind? Looking to partner or work together? Fill in
-          the form and ill be sure to reach out
+          Have a project idea or collaboration in mind? I'd love to hear from you! Feel free to reach out by sending me an email or text through my socials below. I'm excited to connect and discuss how we can work together to bring your ideas to life.
         </p>
         <ul className="flex-start flex-col gap-1 md:gap-2">
           <li>
@@ -75,11 +47,11 @@ export default function Contact() {
                 height={32}
                 width={32}
               />
-              <span className="tiny_text hover:underline">+234 9052513271</span>
+              <span className="tiny_text hover:underline">09052513271</span>
             </a>
           </li>
         </ul>
-        <p className="flex text-center title_text -mt-2 -mb-4">MY SOCIALS</p>
+        <p className="flex text-center title_text">MY SOCIALS</p>
         <ul className="flex-center gap-4">
           <li>
             <a
@@ -115,52 +87,6 @@ export default function Contact() {
             </a>
           </li>
         </ul>
-      </div>
-      <div className="w-full md:w-[45%]">
-        <form
-          className="flex items-stretch justify-center gap-4 md:gap-6 flex-col"
-          onSubmit={handleSubmit}
-        >
-          <label className="input_form">
-            <span className="form_label">Your Name</span>
-            <input
-              type="text"
-              title="name"
-              name="name"
-              placeholder="Enter your name"
-              value={state.name}
-              onChange={handleChange}
-              className="form_input"
-            />
-          </label>
-          <label className="input_form">
-            <span className="form_label">Your Email</span>
-            <input
-              type="email"
-              title="email"
-              name="email"
-              placeholder="Enter your email"
-              value={state.email}
-              onChange={handleChange}
-              className="form_input"
-            />
-          </label>
-          <label className="input_form">
-            <span className="form_label">What are you looking for</span>
-            <textarea
-              name="message"
-              title="message"
-              value={state.message}
-              onChange={handleChange}
-              className="form_textarea"
-            />
-          </label>
-          <div>
-            <button className="pry_btn" onSubmit={handleSubmit}>
-              SUBMIT
-            </button>
-          </div>
-        </form>
       </div>
     </section>
   );

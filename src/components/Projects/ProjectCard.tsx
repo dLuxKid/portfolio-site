@@ -18,7 +18,7 @@ export default function ProjectCard({
   desc,
 }: Props) {
   return (
-    <div className="relative w-full md:w-[48%] h-80 bg-black-sec overflow-hidden [&>*:nth-child(2)]:hover:top-0 [&>*:nth-child(2)]:hover:left-0 [&>*:nth-child(1)]:hover:top-0 [&>*:nth-child(1)]:hover:-left-full flex-center">
+    <div className="relative min-w-[280px] w-full md:w-[48%] h-64 md:h-80 bg-black-sec overflow-hidden [&>*:nth-child(2)]:hover:top-0 [&>*:nth-child(2)]:hover:left-0 [&>*:nth-child(1)]:hover:top-0 [&>*:nth-child(1)]:hover:-left-full flex-center">
       <div className="w-full h-full absolute transition-all duration-500 top-0 left-0 z-10">
         <Image
           src={photoUrl}

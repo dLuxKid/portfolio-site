@@ -5,7 +5,7 @@ import ProjectCard from "./ProjectCard";
 export default function Projects() {
 
   return (
-    <section className="section border-t-4 border-black-sec">
+    <section className="section border-t-4 border-black-sec" id="projects">
       <div>
         <h1 className="head_text capitalize">My projects</h1>
       </div>

@@ -36,7 +36,7 @@ export default function Navbar() {
 
         <ul className="">
           <li className="px-6 py-2 rounded-2xl blue_gradient nav_link cursor-pointer">
-            <a title="download resume" href="../app/favicon.ico" download>
+            <a title="download resume" href="../app/favicon.ico" download target="_blank" rel="noopener noreferrer">
               Resume
             </a>
           </li>

@@ -77,32 +77,8 @@ textarea:focus {
   @apply bg-gradient-to-r from-[#bfbfbf] to-[#fc814a] text-transparent bg-clip-text;
 }
 
-.input_form {
-  @apply flex flex-col gap-2 sm:gap-3 items-stretch justify-center;
-}
-
-.form_label {
-  @apply font-semibold text-base md:text-xl text-white-sec;
-}
-
-.form_textarea {
-  @apply w-full h-40 p-4 bg-black-sec rounded-md text-white-sec;
-}
-
-.form_input {
-  @apply w-full p-4 bg-black-sec rounded-md placeholder:text-base placeholder:font-semibold text-white-sec;
-}
-
 .logo_text {
   @apply cursor-pointer font-semibold md:font-bold text-lg md:text-xl text-white-pry tracking-wide uppercase;
-}
-
-.dropdown {
-  @apply absolute right-0 top-full mt-3 w-full p-5 rounded-lg bg-white min-w-[210px] flex flex-col gap-2 justify-end items-end;
-}
-
-.prompt_card {
-  @apply flex-1 break-inside-avoid rounded-lg border border-gray-300 bg-white/20 bg-clip-padding p-6 pb-4 backdrop-blur-lg backdrop-filter md:w-[360px] w-full h-fit;
 }
 
 .flex-center {

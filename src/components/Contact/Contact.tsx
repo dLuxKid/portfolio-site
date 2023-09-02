@@ -11,7 +11,7 @@ export default function Contact() {
           Get in touch with me
         </h2>
         <p className="body_text">
-          Have a project idea or collaboration in mind? I'd love to hear from you! Feel free to reach out by sending me an email or text through my socials below. I'm excited to connect and discuss how we can work together to bring your ideas to life.
+          Have a project idea or collaboration in mind? I&#39;d love to hear from you! Feel free to reach out by sending me an email or text through my socials below. I&#39;m excited to connect and discuss how we can work together to bring your ideas to life.
         </p>
         <ul className="flex-center gap-4">
           <li>

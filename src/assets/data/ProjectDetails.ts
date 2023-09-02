@@ -1,9 +1,12 @@
+// images
 import collabor8 from "@/assets/imgs/projects/collabor8.png";
 import DermCheck from "@/assets/imgs/projects/DermCheck.png";
 import LuxClothings from "@/assets/imgs/projects/Luxclothings.png";
 import Covid19 from "@/assets/imgs/projects/covid19.png";
 import financetracka from "@/assets/imgs/projects/financetracka.png";
 import hotelmidrand from "@/assets/imgs/projects/hotelmidrand.png";
+import codm from "@/assets/imgs/projects/codmplayarena.png";
+// types
 import { StaticImageData } from "next/image";
 
 interface Props {
@@ -15,6 +18,13 @@ interface Props {
 }
 
 export const projectDetails: Array<Props> = [
+  {
+    photoUrl: codm,
+    desc: "A codm-based esport web application",
+    name: "CODM PLAY ARENA",
+    githubLink: "https://github.com/dLuxKid/esports-app",
+    webLink: "https://codmplayarena.vercel.app/",
+  },
   {
     photoUrl: collabor8,
     name: "collabor8",
@@ -55,18 +65,4 @@ export const projectDetails: Array<Props> = [
     name: "covid19 tracker",
     githubLink: "https://github.com/dLuxKid/covid19-tracker",
   },
-  // {
-  //   photoUrl: "",
-  //   desc: "",
-  //   name: "",
-  //   githubLink: "",
-  //   webLink: "",
-  // },
-  // {
-  //   photoUrl: "",
-  //   name: "",
-  //   desc: "",
-  //   githubLink: "",
-  //   webLink: "",
-  // },
 ];

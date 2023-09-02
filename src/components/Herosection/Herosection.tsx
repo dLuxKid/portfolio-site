@@ -8,7 +8,7 @@ export default function Herosection() {
         <Avatar />
         <div className="w-full sm:w-[80%] md:w-[60%] text-center mt-10 flex flex-col gap-2">
           <h2 className="head_text tracking-wide blue_gradient_text">
-            Hello, I'm Adetunji Marvellous
+            Hello, I&#39;m Adetunji Marvellous
           </h2>
           <p className="body_text">
             I am a frontend web developer based in Nigeria. I specialize in

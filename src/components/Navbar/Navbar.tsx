@@ -1,40 +1,13 @@
-"use client";
-
-import Link from "next/link";
-import { useEffect, useRef } from "react";
-
 export default function Navbar() {
-  const navRef = useRef<any>(false);
-
-  const nav =
-    "sticky top-0 left-0 bg-transparent backdrop-blur-[2px] shadow-md z-50";
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 80) {
-        navRef.current = true;
-      } else {
-        navRef.current = false;
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
 
   return (
     <nav
-      className={`w-full px-[5%] py-4 ${navRef.current && nav}`}
-      ref={navRef}
+      className='w-full px-[5%] py-4 sticky top-0 bg-transparent backdrop-blur-[2px] shadow-md z-50'
     >
       <div className="flex-between w-full relative">
         <p className="logo_text">
-          <Link href={"/"}>Marvellous</Link>
+          Marvellous
         </p>
-
-
         <div className="px-6 py-2 rounded-lg blue_gradient cursor-pointer">
           <a title="download resume"
             href="https://drive.google.com/file/d/12ySwyDCZ_BDr7ZevRgkQsJV4z0XNpDr2/view?usp=sharing"

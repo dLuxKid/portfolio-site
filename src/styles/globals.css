@@ -45,10 +45,6 @@ textarea:focus {
   @apply rounded-full border py-2 px-5 border-white-pry bg-black-pry text-white-sec hover:bg-white-pry hover:text-black-sec transition-all duration-300 font-semibold text-center text-sm sm:text-base md:text-lg flex items-center justify-center;
 }
 
-.outline_btn {
-  @apply rounded-full border py-2 px-5 text-black-pry bg-white-pry transition-all hover:border-white-pry hover:bg-black-pry hover:text-white text-center duration-300 font-semibold text-sm sm:text-base md:text-lg flex items-center justify-center;
-}
-
 .head_text {
   @apply text-xl sm:text-2xl font-bold md:text-3xl lg:text-4xl text-white-pry;
 }

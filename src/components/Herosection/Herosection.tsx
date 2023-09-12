@@ -16,11 +16,6 @@ export default function Herosection() {
           </p>
         </div>
         <div className="flex-center flex-col md:flex-row gap-4 mt-6 md:mt-8">
-          <a href="#contact">
-            <button className="outline_btn uppercase" type="button">
-              Get in touch
-            </button>
-          </a>
           <a href="#projects">
             <button className="white_btn uppercase" type="button">
               See my projects

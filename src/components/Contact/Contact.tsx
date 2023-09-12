@@ -4,7 +4,6 @@ export default function Contact() {
   return (
     <section
       className="w-full section border-t-4 border-black-sec"
-      id="contact"
     >
       <div className="w-full flex-center flex-col gap-4 md:gap-6">
         <h2 className="head_text uppercase blue_gradient_text">

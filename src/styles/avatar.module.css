@@ -1,27 +1,18 @@
-.spinContainer {
-  width: 100%;
-  height: 100%;
-  padding: 0.5rem;
-  position: relative;
-}
-
 .shape {
   width: 100%;
   height: 100%;
   transition: border-radius 1s ease-out;
-  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   animation: morph 5s ease-in-out infinite both alternate;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   position: absolute;
   overflow: hidden;
   z-index: 5;
 }
 
 .bd {
-  width: 142%;
-  height: 142%;
+  width: 100%;
+  height: 100%;
   position: absolute;
-  left: -21%;
-  top: -21%;
   background: url("../assets/imgs/Marvellous.JPG");
   background-size: 100%;
   background-position: top right;

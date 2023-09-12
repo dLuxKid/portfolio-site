@@ -9,7 +9,7 @@ export default function Contact() {
         <h2 className="head_text uppercase blue_gradient_text">
           Get in touch with me
         </h2>
-        <p className="body_text">
+        <p className="body_text max-w-3xl">
           Have a project idea or collaboration in mind? I&#39;d love to hear from you! Feel free to reach out by sending me an email or text through my socials below. I&#39;m excited to connect and discuss how we can work together to bring your ideas to life.
         </p>
         <ul className="flex-center gap-4">

@@ -20,6 +20,5 @@ To view my portfolio, visit [Website](https://adetunjimarvellous.vercel.app).
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
+This project is licensed under the MIT License.
 ---

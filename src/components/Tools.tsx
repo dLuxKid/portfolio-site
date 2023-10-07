@@ -7,7 +7,7 @@ export default function Tools() {
       <div className="mb-6 md:mb-8">
         <h1 className="head_text">Tools i use</h1>
       </div>
-      <div className="flex-between flex-wrap">
+      <div className="flex-between gap-4 flex-wrap">
         {SkillsetDetails.map((item, idx) => (
           <SkillsetCard label={item.label} imgUrl={item.imgUrl} key={idx} />
         ))}

@@ -1,6 +1,6 @@
 import Image, { StaticImageData } from "next/image";
-import Github from "../SVG/Github";
-import Web from "../SVG/Web";
+import Github from "../assets/svgs/Github";
+import Web from "../assets/svgs/Web";
 
 interface Props {
   photoUrl: StaticImageData;

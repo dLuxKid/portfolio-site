@@ -1,7 +1,7 @@
-import Contact from "@/components/Contact/Contact";
-import Herosection from "@/components/Herosection/Herosection";
-import Projects from "@/components/Projects/Projects";
-import Tools from "@/components/Tools/Tools";
+import Contact from "@/components/Contact";
+import Herosection from "@/components/Herosection";
+import Projects from "@/components/Projects";
+import Tools from "@/components/Tools";
 
 export default function Home() {
   return (

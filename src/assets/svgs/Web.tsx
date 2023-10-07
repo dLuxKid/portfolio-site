@@ -6,8 +6,8 @@ export default function Web() {
       fill="white"
       height="32"
       width="32"
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       enableBackground={"new 0 0 112.55 122.88"}
       viewBox="0 0 112.55 122.88"
     >

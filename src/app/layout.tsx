@@ -14,8 +14,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: '../assets/imgs/Marvellous.JPG',
-        // width: ,
-        // height: 600,
+        width: 800,
+        height: 600,
       },
     ],
     locale: 'en_US',

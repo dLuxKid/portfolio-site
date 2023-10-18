@@ -33,10 +33,6 @@ textarea:focus {
   outline: 0;
 }
 
-.section {
-  @apply px-[5%] py-[2.5%];
-}
-
 .pry_btn {
   @apply rounded-full border  bg-gradient-to-r from-[#bfbfbf] to-[#fc814a] py-2 px-5 text-white-pry transition-all duration-300 hover:opacity-90 font-semibold text-center text-sm sm:text-base md:text-lg flex items-center justify-center;
 }
@@ -58,7 +54,7 @@ textarea:focus {
 }
 
 .tiny_text {
-  @apply text-xs sm:text-sm md:text-base font-medium text-white-sec;
+  @apply text-sm md:text-base font-medium text-white-sec;
 }
 
 .nav_link {
@@ -74,7 +70,7 @@ textarea:focus {
 }
 
 .logo_text {
-  @apply cursor-pointer font-semibold md:font-bold text-lg md:text-xl text-white-pry tracking-wide uppercase;
+  @apply cursor-pointer font-semibold md:font-bold text-base sm:text-lg md:text-xl text-white-pry tracking-wide uppercase;
 }
 
 .flex-center {

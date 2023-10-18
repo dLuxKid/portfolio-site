@@ -10,6 +10,9 @@ export default function Home() {
       <Tools />
       <Projects />
       <Contact />
+      <div
+        className="w-full px-[5%] py-4 border-t-4 border-black-sec"
+      />
     </main>
   );
 }

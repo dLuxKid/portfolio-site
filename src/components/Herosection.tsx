@@ -3,8 +3,8 @@ import Avatar from "./Avatar";
 
 export default function Herosection() {
   return (
-    <section className="section md:min-h-[80vh] border-t-4 border-black-sec">
-      <div className="flex justify-between items-center flex-col mt-12">
+    <section className="px-[5%] py-16 md:min-h-[80vh] border-t-4 border-black-sec">
+      <div className="flex justify-between items-center flex-col md:mt-12">
         <Avatar />
         <div className="w-full sm:w-[80%] md:w-[60%] text-center mt-10 flex flex-col gap-2">
           <h2 className="head_text tracking-wide blue_gradient_text">

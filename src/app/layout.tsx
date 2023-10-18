@@ -1,6 +1,6 @@
-import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import "@/styles/globals.css";
+
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -40,7 +40,6 @@ export default function RootLayout({
       <body className="bg-black-pry">
         <Navbar />
         {children}
-        <Footer />
       </body>
     </html>
   );

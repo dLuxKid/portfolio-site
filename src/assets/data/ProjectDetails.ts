@@ -28,14 +28,14 @@ export const projectDetails: Array<Props> = [
   {
     photoUrl: collabor8,
     name: "collabor8",
-    desc: "A mini project management web application",
+    desc: "A project management web application",
     githubLink: "https://github.com/dLuxKid/project-management-web-app",
     webLink: "https://collabor8-one.vercel.app/",
   },
   {
     photoUrl: hotelmidrand,
     name: "Hotelmidrand",
-    desc: "An hotel web application",
+    desc: "A commercial hotel web application",
     githubLink: "https://github.com/dLuxKid/hotelApp",
     webLink: "https://hotelmidrand.vercel.app/",
   },

@@ -7,7 +7,7 @@ export default function Tools() {
       <div className="mb-6 md:mb-8">
         <h1 className="head_text blue_gradient_text">Tools i use</h1>
       </div>
-      <div className="flex-between gap-x-6 md:gap-x-0 md:gap-y-6 overflow-scroll md:flex-wrap">
+      <div className="flex-between gap-x-6 md:gap-x-0 md:gap-y-6 overflow-x-scroll md:overflow-visible md:flex-wrap">
         {SkillsetDetails.map((item, idx) => (
           <SkillsetCard label={item.label} imgUrl={item.imgUrl} key={idx} />
         ))}

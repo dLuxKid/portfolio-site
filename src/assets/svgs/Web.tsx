@@ -4,8 +4,6 @@ export default function Web() {
       xmlns="http://www.w3.org/2000/svg"
       xmlSpace="preserve"
       fill="white"
-      height="32"
-      width="32"
       fillRule="evenodd"
       clipRule="evenodd"
       enableBackground={"new 0 0 112.55 122.88"}

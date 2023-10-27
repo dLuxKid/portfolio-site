@@ -8,7 +8,7 @@ export default function SkillsetCard({
   imgUrl: string;
 }) {
   return (
-    <div className="w-full min-w-[250px] md:w-[31%] lg:w-[24%] flex-center flex-col gap-4 py-8 rounded-2xl bg-black-sec duration-300 drop-shadow-lg hover:-translate-y-4">
+    <div className="w-full min-w-[250px] md:w-[31%] lg:w-[24%] mx-auto flex-center flex-col gap-4 py-8 rounded-2xl bg-black-sec duration-300 drop-shadow-lg hover:-translate-y-4">
       <Image
         src={imgUrl}
         alt="Language Thumbnails"

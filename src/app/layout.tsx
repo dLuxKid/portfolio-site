@@ -5,10 +5,10 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "godkid",
-  description: "Adetunji Marvellous's portfolio site",
+  description: "Frontend web developer, experienced with nextjs, reactjs, tailwindcss.",
   openGraph: {
     title: 'godkid',
-    description: "Adetunji Marvellous's portfolio site",
+    description: "Frontend web developer, experienced with nextjs, reactjs, tailwindcss.",
     url: 'https://adetunjimarvellous.vercel.app',
     siteName: 'Adetunji Marvellous',
     images: [

@@ -23,7 +23,7 @@ export const projectDetails: Array<Props> = [
     desc: "An ecommerce dashboard, monitoring sales, profits and inventory",
     name: "Ecommerce  Dashbord",
     githubLink: "https://github.com/dLuxKid/ecommerce-dashboard",
-    webLink: "https://ecommerce-dashboard-main.netlify.app/",
+    webLink: "https://ecommerce-dashboard-steel.vercel.app/",
   },
   {
     photoUrl: codm,

@@ -6,7 +6,7 @@ interface Props {
   photoUrl: StaticImageData;
   name: string;
   githubLink: string;
-  webLink: string;
+  webLink?: string;
   desc: string;
 }
 
@@ -38,11 +38,11 @@ export default function ProjectCard({
             rel="noopener"
             className="hover:opacity-80 transition-all duration-200 cursor-pointer"
           >
-            <div className="w-6 md:w-8">
-              <Github />
+            <div>
+              <Github className="w-6 md:w-8" />
             </div>
           </a>
-          <div className="w-6 md:w-8">
+          <div>
             {webLink && (
               <a
                 href={webLink}
@@ -51,7 +51,7 @@ export default function ProjectCard({
                 rel="noopener"
                 className="hover:opacity-80 transition-all duration-200 cursor-pointer"
               >
-                <Web />
+                <Web className="w-6 md:w-8" />
               </a>
             )}
           </div>

@@ -1,12 +1,11 @@
-// images
+import codm from "@/assets/imgs/projects/codmplayarena.png";
 import collabor8 from "@/assets/imgs/projects/collabor8.png";
-import DermCheck from "@/assets/imgs/projects/DermCheck.png";
-import LuxClothings from "@/assets/imgs/projects/Luxclothings.png";
 import Covid19 from "@/assets/imgs/projects/covid19.png";
+import DermCheck from "@/assets/imgs/projects/DermCheck.png";
 import financetracka from "@/assets/imgs/projects/financetracka.png";
 import hotelmidrand from "@/assets/imgs/projects/hotelmidrand.png";
-import codm from "@/assets/imgs/projects/codmplayarena.png";
-// types
+import LuxClothings from "@/assets/imgs/projects/Luxclothings.png";
+import ecommerce from "@/assets/imgs/projects/ecommerce.png";
 import { StaticImageData } from "next/image";
 
 interface Props {
@@ -18,6 +17,13 @@ interface Props {
 }
 
 export const projectDetails: Array<Props> = [
+  {
+    photoUrl: ecommerce,
+    desc: "An ecommerce dashboard, monitoring sales, profits and inventory",
+    name: "Ecommerce  Dashbord",
+    githubLink: "https://github.com/dLuxKid/ecommerce-dashboard",
+    webLink: "https://ecommerce-dashboard-main.netlify.app/",
+  },
   {
     photoUrl: codm,
     desc: "A codm-based esport web application",
@@ -33,6 +39,13 @@ export const projectDetails: Array<Props> = [
     webLink: "https://collabor8-one.vercel.app/",
   },
   {
+    photoUrl: LuxClothings,
+    name: "Luxury Clothings",
+    desc: "A clothing e-commerce store",
+    githubLink: "https://github.com/dLuxKid/Luxury-Clothings",
+    webLink: "https://luxury-clothings.vercel.app/",
+  },
+  {
     photoUrl: hotelmidrand,
     name: "Hotelmidrand",
     desc: "A commercial hotel web application",
@@ -45,13 +58,7 @@ export const projectDetails: Array<Props> = [
     name: "DermCheck",
     githubLink: "https://github.com/dLuxKid/2023",
   },
-  {
-    photoUrl: LuxClothings,
-    name: "Luxury Clothings",
-    desc: "A clothing e-commerce store",
-    githubLink: "https://github.com/dLuxKid/Luxury-Clothings",
-    webLink: "https://luxury-clothings.vercel.app/",
-  },
+
   {
     photoUrl: financetracka,
     name: "Fin9ce Tracka",

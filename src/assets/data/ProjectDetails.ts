@@ -6,6 +6,7 @@ import financetracka from "@/assets/imgs/projects/financetracka.png";
 import hotelmidrand from "@/assets/imgs/projects/hotelmidrand.png";
 import LuxClothings from "@/assets/imgs/projects/Luxclothings.png";
 import ecommerce from "@/assets/imgs/projects/ecommerce.png";
+
 import { StaticImageData } from "next/image";
 
 interface Props {

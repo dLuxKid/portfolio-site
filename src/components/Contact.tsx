@@ -38,7 +38,7 @@ export default function Contact() {
           <li className="w-6 md:w-12">
             <a
               title="twitter"
-              href="https://twitter.com/JustMarvellous_"
+              href="https://x.com/MarvellousOnX"
               rel="noopener noreferrer"
               target="_blank"
               className="cursor-pointer text-white-sec"

@@ -1,101 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  -ms-overflow-style: none;
-  scrollbar-width: 0;
-  /* outline: 1px solid red; */
+.vollkorn {
+  font-family: "Vollkorn", "Courier New", Courier, monospace;
 }
 
-body {
-  scrollbar-width: none;
+* {
   -ms-overflow-style: none;
+  scrollbar-width: none;
+  /* outline: 1px solid red; */
+  @apply duration-300 ease-in-out transition-all;
+  font-family: "Manrope", "Courier New", Courier, monospace;
+  color: #282828;
 }
 
 *::-webkit-scrollbar {
   display: none;
   width: 0;
-}
-
-input,
-textarea {
-  border: 0;
-  outline: 0;
-}
-
-input:focus,
-textarea:focus {
-  border: 0;
-  outline: 0;
-}
-
-svg {
-  width: 100%;
-  height: 100%;
-}
-
-.pry_btn {
-  @apply rounded-full border  bg-gradient-to-r from-[#bfbfbf] to-[#fc814a] py-2 px-5 text-white-pry transition-all duration-300 hover:opacity-90 font-semibold text-center text-sm sm:text-base md:text-lg flex items-center justify-center;
-}
-
-.white_btn {
-  @apply rounded-full border py-2 px-5 border-white-pry bg-black-pry text-white-sec hover:bg-white-pry hover:text-black-sec transition-all duration-300 font-semibold text-center text-sm sm:text-base md:text-lg flex items-center justify-center;
-}
-
-.head_text {
-  @apply text-xl sm:text-2xl font-bold md:text-3xl lg:text-4xl text-white-pry;
-}
-
-.title_text {
-  @apply text-lg font-semibold md:font-semibold sm:text-xl md:text-2xl text-white-pry;
-}
-
-.body_text {
-  @apply text-base md:text-xl font-medium text-white-sec;
-}
-
-.tiny_text {
-  @apply text-sm md:text-base font-medium text-white-sec;
-}
-
-.nav_link {
-  @apply text-base md:text-lg text-white-sec hover:text-white hover:opacity-90 duration-200 font-semibold;
-}
-
-.blue_gradient {
-  @apply bg-gradient-to-r from-[#bfbfbf] to-[#fc814a];
-}
-
-.blue_gradient_text {
-  @apply bg-gradient-to-r from-[#bfbfbf] to-[#fc814a] text-transparent bg-clip-text;
-}
-
-.logo_text {
-  @apply cursor-pointer font-semibold md:font-bold text-base sm:text-lg md:text-xl text-white-pry tracking-wide uppercase;
-}
-
-.flex-center {
-  @apply flex justify-center items-center;
-}
-
-.flex-start {
-  @apply flex justify-start items-start;
-}
-
-.flex-end {
-  @apply flex justify-end items-center;
-}
-
-.flex-between {
-  @apply flex justify-between items-center;
-}
-
-@media (max-width: 780px) {
-  .section {
-    @apply p-[5%];
-  }
 }

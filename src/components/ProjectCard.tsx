@@ -8,54 +8,49 @@ interface Props {
   githubLink: string;
   webLink?: string;
   desc: string;
+  index: number;
+  builtWith?: string;
 }
 
 export default function ProjectCard({
   photoUrl,
+  index,
   name,
   githubLink,
   webLink,
   desc,
+  builtWith,
 }: Props) {
   return (
-    <div className="relative min-w-[280px] w-full md:w-[48%] h-52 md:h-72 overflow-hidden [&>*:nth-child(2)]:hover:top-0 [&>*:nth-child(2)]:hover:left-0 [&>*:nth-child(1)]:hover:top-0 [&>*:nth-child(1)]:hover:-left-full flex-center">
-      <div className="w-full h-full absolute transition-all duration-500 top-0 left-0 z-10">
+    <div className="w-full flex flex-col py-10 md:py-16 lg:flex-row gap-8 md:gap-12 lg:justify-between">
+      <div className="lg:flex-1 flex flex-col gap-4 md:gap-6">
+        <h4 className="text-lg md:text-xl">
+          {(index + 1).toString().padStart(2, "0")}/ {name}
+        </h4>
+
+        <p className="text-base md:text-lg">{desc}</p>
+
+        <p className="text-base md:text-lg text-[#606060]">
+          Built with: {builtWith}
+        </p>
+
+        <div className="mt-auto flex items-center gap-4">
+          <a href={githubLink} target="_blank" rel="noopener noreferrer">
+            <Github className="h-6 w-6 md:h-8 md:w-8" />
+          </a>
+          {webLink && (
+            <a href={webLink} target="_blank" rel="noopener noreferrer">
+              <Web className="h-6 w-6 md:h-8 md:w-8" />
+            </a>
+          )}
+        </div>
+      </div>
+      <div className="lg:flex-1 rounded-lg shadow-lg overflow-hidden">
         <Image
           src={photoUrl}
-          alt="project thumbnail"
-          className="w-full h-full object-contain object-center"
+          alt="project image"
+          className="object-cover object-center duration-500 hover:scale-105"
         />
-      </div>
-      <div className="w-full h-full absolute transition-all duration-500 top-0 left-full py-8 px-4 bg-black-sec border-white-pry border text-center flex-center flex-col gap-4">
-        <h2 className="body_text">{name}</h2>
-        <p className="tiny_text -mt-4">{desc}</p>
-        <span className="w-full h-[2px] bg-white-sec rounded-sm"></span>
-        <p className="flex-center gap-4 md:gap-8 w-full">
-          <a
-            href={githubLink}
-            title="github link"
-            target="_blank"
-            rel="noopener"
-            className="hover:opacity-80 transition-all duration-200 cursor-pointer"
-          >
-            <div>
-              <Github className="w-6 md:w-8" />
-            </div>
-          </a>
-          <div>
-            {webLink && (
-              <a
-                href={webLink}
-                title="website link"
-                target="_blank"
-                rel="noopener"
-                className="hover:opacity-80 transition-all duration-200 cursor-pointer"
-              >
-                <Web className="w-6 md:w-8" />
-              </a>
-            )}
-          </div>
-        </p>
       </div>
     </div>
   );

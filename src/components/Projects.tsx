@@ -1,18 +1,18 @@
-import { projectDetails } from "@/assets/data/ProjectDetails";
+import { projectDetails } from "@/assets/data/project-details";
 import ProjectCard from "./ProjectCard";
 
 export default function Projects() {
   return (
-    <section
-      className="px-[5%] py-12 md:py-24 border-t-4 border-black-sec"
-      id="projects"
-    >
-      <div>
-        <h1 className="head_text capitalize blue_gradient_text">My projects</h1>
+    <section className="py-8 md:py-12">
+      <div className="pb-4 border-b-2 border-black">
+        <h1 className="vollkorn text-2xl md:text-3xl text-black font-semibold">
+          Projects
+        </h1>
       </div>
-      <div className="mt-8 md:mt-12 flex-between gap-x-6 md:gap-x-0 md:gap-y-6 overflow-scroll md:flex-wrap">
+
+      <div className="[&>div]:border-b [&>div]:border-b-black [&>div:last-child]:border-b-0">
         {projectDetails.map((item, idx) => (
-          <ProjectCard key={idx} {...item} />
+          <ProjectCard key={idx} {...item} index={idx} />
         ))}
       </div>
     </section>

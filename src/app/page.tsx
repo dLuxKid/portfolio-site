@@ -1,18 +1,17 @@
 import Contact from "@/components/Contact";
 import Herosection from "@/components/Herosection";
+import MoreAboutMe from "@/components/MoreAboutMe";
+import Navbar from "@/components/Navbar";
 import Projects from "@/components/Projects";
-import Tools from "@/components/Tools";
 
 export default function Home() {
   return (
-    <main>
+    <>
+      <Navbar />
       <Herosection />
-      <Tools />
       <Projects />
+      <MoreAboutMe />
       <Contact />
-      <div
-        className="w-full px-[5%] py-4 border-t-4 border-black-sec"
-      />
-    </main>
+    </>
   );
 }

@@ -7,7 +7,7 @@ import Avatar from "./Avatar";
 
 export default function Herosection() {
   return (
-    <section className="min-h-screen py-8 md:py-12 flex items-center justify-center">
+    <section className="min-h-[80svh] py-8 flex items-center justify-center">
       <div className="flex items-center justify-between flex-col lg:flex-row gap-12 lg:gap-8">
         <div className="w-full lg:w-[50%] flex flex-col gap-6 md:gap-8">
           <h2 className="flex items-center gap-4 text-sm md:text-lg">

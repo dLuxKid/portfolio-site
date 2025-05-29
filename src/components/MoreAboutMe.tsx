@@ -13,7 +13,7 @@ export default function MoreAboutMe() {
             More About Me
           </h1>
         </div>
-        <p className="mt-8 text-sm md:text-xl leading-8 [&>a]:underline">
+        <p className="mt-8 text-sm md:text-xl leading-[26px] md:leading-10 [&>a]:underline">
           I also dabble into backend development, working with{" "}
           <span className="text-[#83CD29] font-semibold inline-flex items-center justify-center gap-1">
             Node.Js
@@ -130,7 +130,7 @@ export default function MoreAboutMe() {
           </h1>
         </div>
 
-        <div className="space-y-4 mt-8 text-sm font-medium">
+        <div className="space-y-4 mt-8 text-sm md:text-base font-medium">
           <div>
             <a
               href="https://medium.com/@godkid."
@@ -148,7 +148,7 @@ export default function MoreAboutMe() {
             Content Creation
           </h1>
         </div>
-        <div className="space-y-4 mt-8 text-sm font-medium">
+        <div className="space-y-4 mt-8 text-sm md:text-base font-medium">
           <div>
             <a
               href="https://www.youtube.com/@godkid."

@@ -10,7 +10,7 @@ export default function Projects() {
         </h1>
       </div>
 
-      <div className="[&>div]:border-b [&>div]:border-b-black [&>div:last-child]:border-b-0">
+      <div>
         {projectDetails.map((item, idx) => (
           <ProjectCard key={idx} {...item} index={idx} />
         ))}

@@ -22,17 +22,15 @@ export default function ProjectCard({
   builtWith,
 }: Props) {
   return (
-    <div className="w-full flex flex-col py-10 md:py-16 lg:flex-row gap-8 md:gap-12 lg:justify-between">
+    <div className="w-full border-b-[0.7px] md:border-b border-b-black/50 flex flex-col py-10 md:py-16 lg:flex-row gap-8 md:gap-12 lg:justify-between">
       <div className="lg:flex-1 flex flex-col gap-4 md:gap-6">
         <h4 className="text-lg md:text-xl">
           {(index + 1).toString().padStart(2, "0")}/ {name}
         </h4>
 
-        <p className="text-base md:text-lg">{desc}</p>
+        <p className="text-sm md:text-base text-[#606060]">{desc}</p>
 
-        <p className="text-base md:text-lg text-[#606060]">
-          Built with: {builtWith}
-        </p>
+        <p className="text-base md:text-lg">Built with: {builtWith}</p>
 
         <div className="mt-auto flex items-center gap-4">
           <a href={githubLink} target="_blank" rel="noopener noreferrer">

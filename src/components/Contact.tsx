@@ -3,17 +3,17 @@ export default function Contact() {
     <footer className="w-full py-8 md:py-12">
       <div className="pb-4 border-b-2 border-black">
         <h1 className="vollkorn text-2xl md:text-3xl text-black font-semibold">
-          Contact Information
+          Contact Me
         </h1>
       </div>
       <div className="space-y-12 md:space-y-20 mt-8">
         <div className="flex lg:items-center lg:justify-between flex-col lg:flex-row gap-y-8 gap-x-20">
-          <p className="text-lg md:text-2xl font-medium leading-8 md:leading-10">
+          <p className="text-base md:text-2xl font-medium leading-8 md:leading-10">
             Have a project idea or collaboration in mind?
             <span className="flex gap-4 items-center">
               I&#39;d love to hear from you!
               <svg
-                className="rotate-90 lg:rotate-0 w-5 h-5 md:w-6 md:h-6"
+                className="rotate-90 lg:rotate-0 w-4 h-4 md:w-6 md:h-6"
                 viewBox="0 0 24 21"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -31,19 +31,16 @@ export default function Contact() {
               rel="noopener noreferrer"
               href="mailto:adetunjimarvellous09@gmail.com"
               target="_blank"
-              className="cursor-pointer hover:underline vollkorn text-lg md:text-2xl font-bold"
+              className="cursor-pointer hover:underline vollkorn text-base md:text-2xl font-bold"
             >
-              <span className="hidden xs:block">
-                adetunjimarvellous09@gmail.com
-              </span>
-              <span className="xs:hidden">Email</span>
+              adetunjimarvellous09@gmail.com
             </a>
             <a
               title="view resume"
               href="https://drive.google.com/file/d/12ySwyDCZ_BDr7ZevRgkQsJV4z0XNpDr2/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-base md:text-lg hover:underline"
+              className="text-sm md:text-lg hover:underline"
             >
               View Resume
             </a>
@@ -60,7 +57,7 @@ export default function Contact() {
                 rel="noopener noreferrer"
                 href="https://wa.me/+2349052513271"
                 target="_blank"
-                className="cursor-pointer underline text-base md:text-xl"
+                className="cursor-pointer underline text-sm md:text-xl"
               >
                 Whatsapp
               </a>
@@ -71,7 +68,7 @@ export default function Contact() {
                 href="https://x.com/marvellousonx"
                 rel="noopener noreferrer"
                 target="_blank"
-                className="cursor-pointer underline text-base md:text-xl"
+                className="cursor-pointer underline text-sm md:text-xl"
               >
                 X
               </a>
@@ -82,7 +79,7 @@ export default function Contact() {
                 href="https://www.linkedin.com/in/marvellousadetunji/"
                 rel="noopener noreferrer"
                 target="_blank"
-                className="cursor-pointer underline text-base md:text-xl"
+                className="cursor-pointer underline text-sm md:text-xl"
               >
                 LinkedIn
               </a>
@@ -93,7 +90,7 @@ export default function Contact() {
                 href="https://github.com/dLuxKid"
                 rel="noopener noreferrer"
                 target="_blank"
-                className="cursor-pointer underline text-base md:text-xl"
+                className="cursor-pointer underline text-sm md:text-xl"
               >
                 Github
               </a>

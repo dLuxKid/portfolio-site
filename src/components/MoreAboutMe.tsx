@@ -13,21 +13,21 @@ export default function MoreAboutMe() {
             More About Me
           </h1>
         </div>
-        <p className="mt-8 text-lg md:text-xl leading-8 [&>a]:underline">
+        <p className="mt-8 text-sm md:text-xl leading-8 [&>a]:underline">
           I also dabble into backend development, working with{" "}
           <span className="text-[#83CD29] font-semibold inline-flex items-center justify-center gap-1">
             Node.Js
-            <NodeJs />
+            <NodeJs className="w-5 h-5 md:w-6 md:h-6" />
           </span>
           ,{" "}
           <span className="text-black font-semibold inline-flex items-center justify-center gap-1">
             Express
-            <Express />
+            <Express className="w-5 h-5 md:w-6 md:h-6" />
           </span>
           , and{" "}
           <span className="text-[#439934] font-semibold inline-flex items-center justify-center gap-1">
             MongoDB
-            <MongoDB />
+            <MongoDB className="w-5 h-5 md:w-6 md:h-6" />
           </span>
           . Projects i built with these technologies include a{" "}
           <a
@@ -56,7 +56,7 @@ export default function MoreAboutMe() {
           . I also have experience with{" "}
           <span className="text-[#f58220] font-semibold inline-flex items-center justify-center gap-1">
             Firebase
-            <Firebase />
+            <Firebase className="w-5 h-5 md:w-6 md:h-6" />
           </span>
           , which I used for authentication and real-time database in some of my
           projects.
@@ -87,7 +87,7 @@ export default function MoreAboutMe() {
           , and planning to build projects using{" "}
           <span className="text-[#6AD7E5] font-semibold inline-flex items-center justify-center gap-1">
             Golang
-            <Golang />
+            <Golang className="w-5 h-5 md:w-6 md:h-6" />
           </span>{" "}
           as I continue my backend development journey.
           <br />
@@ -130,7 +130,7 @@ export default function MoreAboutMe() {
           </h1>
         </div>
 
-        <div className="space-y-4 mt-8 font-medium">
+        <div className="space-y-4 mt-8 text-sm font-medium">
           <div>
             <a
               href="https://medium.com/@godkid."
@@ -148,7 +148,7 @@ export default function MoreAboutMe() {
             Content Creation
           </h1>
         </div>
-        <div className="space-y-4 mt-8 font-medium">
+        <div className="space-y-4 mt-8 text-sm font-medium">
           <div>
             <a
               href="https://www.youtube.com/@godkid."

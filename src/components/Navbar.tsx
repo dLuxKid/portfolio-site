@@ -2,7 +2,9 @@ export default function Navbar() {
   return (
     <nav className="w-full">
       <div className="flex items-center justify-between w-full relative">
-        <h1 className="text-xl md:text-3xl italic font-semibold">Ma.</h1>
+        <h1 className="text-base sm:text-xl md:text-3xl italic font-semibold">
+          Ma.
+        </h1>
 
         <a
           title="view resume"
@@ -11,7 +13,7 @@ export default function Navbar() {
           rel="noopener noreferrer"
           className="flex-center gap-2"
         >
-          <p className="text-base md:text-xl font-medium hover:underline">
+          <p className="text-sm md:text-xl font-medium hover:underline">
             Resume
           </p>
         </a>

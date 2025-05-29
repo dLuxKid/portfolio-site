@@ -1,11 +1,11 @@
-import codm from "@/assets/imgs/projects/codmplayarena.png";
-import collabor8 from "@/assets/imgs/projects/collabor8.png";
-import ecommerce from "@/assets/imgs/projects/ecommerce.png";
-import LuxClothings from "@/assets/imgs/projects/Luxclothings.png";
-import findtrend from "@/assets/imgs/projects/findtrend.png";
-import solarios from "@/assets/imgs/projects/solarios.png";
-import alpharithm from "@/assets/imgs/projects/alpharithm.png";
-import chromamatch from "@/assets/imgs/projects/chromamatch.png";
+import codm from "@/assets/imgs/codmplayarena.webp";
+import collabor8 from "@/assets/imgs/collabor8.webp";
+import ecommerce from "@/assets/imgs/ecommerce.webp";
+import LuxClothings from "@/assets/imgs/Luxclothings.webp";
+import findtrend from "@/assets/imgs/findtrend.webp";
+import solarios from "@/assets/imgs/solarios.webp";
+import alpharithm from "@/assets/imgs/alpharithm.webp";
+import chromamatch from "@/assets/imgs/chromamatch.webp";
 
 import { StaticImageData } from "next/image";
 

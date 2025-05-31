@@ -10,7 +10,7 @@ This portfolio website showcases my work, provides information about me, and off
 
 ## View Portfolio
 
-To view my portfolio, visit [Website](https://adetunjimarvellous.vercel.app).
+To view my portfolio, visit [Website](https://godkid.dev).
 
 ## Technologies Used
 

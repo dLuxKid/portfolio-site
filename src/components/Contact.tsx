@@ -2,9 +2,9 @@ export default function Contact() {
   return (
     <footer className="w-full py-8 md:py-12">
       <div className="pb-4 border-b-2 border-black">
-        <h1 className="vollkorn text-2xl md:text-3xl text-black font-semibold">
+        <h2 className="vollkorn text-2xl md:text-3xl text-black font-semibold">
           Contact Me
-        </h1>
+        </h2>
       </div>
       <div className="space-y-12 md:space-y-20 mt-8">
         <div className="flex lg:items-center lg:justify-between flex-col lg:flex-row gap-y-8 gap-x-20">

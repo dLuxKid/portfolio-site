@@ -9,9 +9,9 @@ export default function MoreAboutMe() {
     <>
       <section className="py-8 md:py-12">
         <div className="pb-4 border-b-2 border-black">
-          <h1 className="vollkorn text-2xl md:text-3xl text-black font-semibold">
+          <h2 className="vollkorn text-2xl md:text-3xl text-black font-semibold">
             More About Me
-          </h1>
+          </h2>
         </div>
         <p className="mt-8 text-sm md:text-xl leading-[26px] md:leading-10 [&>a]:underline">
           I also dabble into backend development, working with{" "}
@@ -125,9 +125,9 @@ export default function MoreAboutMe() {
       </section>
       <section className="py-8 md:py-12">
         <div className="pb-4 border-b-2 border-black">
-          <h1 className="vollkorn text-2xl md:text-3xl text-black font-semibold">
+          <h2 className="vollkorn text-2xl md:text-3xl text-black font-semibold">
             Things i write
-          </h1>
+          </h2>
         </div>
 
         <div className="space-y-4 mt-8 text-sm md:text-base font-medium">
@@ -144,9 +144,9 @@ export default function MoreAboutMe() {
       </section>
       <section className="py-8 md:py-12">
         <div className="pb-4 border-b-2 border-black">
-          <h1 className="vollkorn text-2xl md:text-3xl text-black font-semibold">
+          <h2 className="vollkorn text-2xl md:text-3xl text-black font-semibold">
             Content Creation
-          </h1>
+          </h2>
         </div>
         <div className="space-y-4 mt-8 text-sm md:text-base font-medium">
           <div>

@@ -2,9 +2,9 @@ export default function Navbar() {
   return (
     <nav className="w-full">
       <div className="flex items-center justify-between w-full relative">
-        <h1 className="text-base sm:text-xl md:text-3xl italic font-semibold">
+        <h5 className="text-base sm:text-xl md:text-3xl italic font-semibold">
           Ma.
-        </h1>
+        </h5>
 
         <a
           title="view resume"

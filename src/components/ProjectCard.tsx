@@ -33,11 +33,23 @@ export default function ProjectCard({
         <p className="text-base md:text-lg">Built with: {builtWith}</p>
 
         <div className="mt-auto flex items-center gap-4">
-          <a href={githubLink} target="_blank" rel="noopener noreferrer">
+          <a
+            title="github link"
+            aria-label="live link"
+            href={githubLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Github className="h-6 w-6 md:h-8 md:w-8" />
           </a>
           {webLink && (
-            <a href={webLink} target="_blank" rel="noopener noreferrer">
+            <a
+              title="live link"
+              aria-label="live link"
+              href={webLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Web className="h-6 w-6 md:h-8 md:w-8" />
             </a>
           )}

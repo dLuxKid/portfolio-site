@@ -1,5 +1,5 @@
 import { Analytics } from "@vercel/analytics/next";
-import "@/styles/globals.css";
+import "./globals.css";
 
 import { Metadata } from "next";
 
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     "twitter:card": "summary_large_image",
     "twitter:site": "https://www.godkid.dev",
     "og:url": "https://www.godkid.dev",
-    "og:image": "/opengraph-image.png",
+    "og:image": "https://www.godkid.dev/opengraph-image.png",
     "og:image:alt": "Adetunji Marvellous - Frontend Engineer",
     "og:type": "website",
   },
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     siteName: "Adetunji Marvellous",
     images: [
       {
-        url: "/opengraph-image.png",
+        url: "https://www.godkid.dev/opengraph-image.png",
       },
     ],
     locale: "en_US",

@@ -10,13 +10,13 @@ export default function Herosection() {
     <section className="min-h-[80svh] py-8 flex items-center justify-center">
       <div className="flex items-center justify-between flex-col lg:flex-row gap-12 lg:gap-8">
         <div className="w-full lg:w-[50%] flex flex-col gap-6 md:gap-8">
-          <h2 className="flex items-center gap-4 text-sm md:text-lg">
+          <h3 className="flex items-center gap-4 text-sm md:text-lg">
             <span className="h-1 w-8 md:w-10 bg-black rounded-sm" /> Hi, I&#39;m
             Marvellous Adetunji
-          </h2>
-          <h4 className="text-2xl md:text-5xl vollkorn font-bold leading-16 text-black">
+          </h3>
+          <h1 className="text-2xl md:text-5xl vollkorn font-bold leading-16 text-black">
             Frontend Engineer
-          </h4>
+          </h1>
           <p className="text-sm md:text-xl leading-[26px] md:leading-10">
             I am a frontend web developer passionate about creating seamless,
             user-centric web experiences. My work mainly focuses on building

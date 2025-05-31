@@ -20,14 +20,14 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "godkid",
+    title: "Adetunji Marvellous - Frontend Engineer",
     description:
       "Frontend web developer, experienced with nextjs, reactjs, tailwindcss.",
     url: "https://godkid.dev",
     siteName: "Adetunji Marvellous",
     images: [
       {
-        url: "/opengraph-image.png",
+        url: "https://godkid.dev/opengraph-image.png",
       },
     ],
     locale: "en_US",
@@ -35,6 +35,14 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    images: [
+      {
+        url: "https://godkid.dev/opengraph-image.png",
+      },
+    ],
+    title: "Adetunji Marvellous - Frontend Engineer",
+    description:
+      "Frontend web developer, experienced with nextjs, reactjs, tailwindcss.",
   },
 };
 

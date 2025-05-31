@@ -1,6 +1,6 @@
 import { Analytics } from "@vercel/analytics/next";
-import { Metadata } from "next";
 import "./globals.css";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Adetunji Marvellous - Frontend Engineer",
@@ -18,6 +18,20 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
+  },
+  openGraph: {
+    title: "godkid",
+    description:
+      "Frontend web developer, experienced with nextjs, reactjs, tailwindcss.",
+    url: "https://godkid.dev",
+    siteName: "Adetunji Marvellous",
+    images: [
+      {
+        url: "/opengraph-image.png",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
   },
   twitter: {
     card: "summary_large_image",

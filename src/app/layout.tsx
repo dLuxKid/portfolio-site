@@ -1,24 +1,11 @@
 import { Analytics } from "@vercel/analytics/next";
-import "./globals.css";
-
 import { Metadata } from "next";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Adetunji Marvellous - Frontend Engineer",
   description:
     "Frontend web developer, experienced with nextjs, reactjs, tailwindcss.",
-  other: {
-    "theme-color": "light",
-    "color-scheme": "light",
-    "twitter:image": "https://www.godkid.dev/opengraph-image.png",
-    "twitter:image:alt": "Adetunji Marvellous - Frontend Engineer",
-    "twitter:card": "summary_large_image",
-    "twitter:site": "https://www.godkid.dev",
-    "og:url": "https://www.godkid.dev",
-    "og:image": "https://www.godkid.dev/opengraph-image.png",
-    "og:image:alt": "Adetunji Marvellous - Frontend Engineer",
-    "og:type": "website",
-  },
   robots: {
     index: true,
     follow: true,
@@ -31,20 +18,6 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
-  },
-  openGraph: {
-    title: "godkid",
-    description:
-      "Frontend web developer, experienced with nextjs, reactjs, tailwindcss.",
-    url: "https://www.godkid.dev",
-    siteName: "Adetunji Marvellous",
-    images: [
-      {
-        url: "https://www.godkid.dev/opengraph-image.png",
-      },
-    ],
-    locale: "en_US",
-    type: "website",
   },
   twitter: {
     card: "summary_large_image",
